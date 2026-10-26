@@ -130,6 +130,11 @@ p { margin: 0; }
 .items li::after { content: none; }
 .items .dots { flex: 1; border-bottom: 2px dotted #C9A07A; transform: translateY(-5px); min-width: 20px; }
 .items .price { color: var(--cinnamon); font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cookie-box { margin-top: 20px; background: var(--glaze); border: 2px dashed var(--tan); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px; }
+.cookie-box h3 { font-size: 1.35rem; color: var(--chocolate); }
+.cookie-box p { color: var(--muted); }
+.flavours { display: flex; flex-wrap: wrap; gap: 8px; }
+.flavours span { background: var(--chocolate); color: var(--glaze); border-radius: 999px; padding: 5px 14px; font-weight: 700; font-size: .92rem; }
 .menu-cat .ask { margin-top: 16px; color: var(--muted); }
 
 /* Options (functions) */
