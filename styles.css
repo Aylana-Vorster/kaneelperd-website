@@ -194,6 +194,19 @@ p { margin: 0; }
   .chef-photo { max-width: 360px; justify-self: center; }
 }
 
+/* Gallery */
+.feature { display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 56px; align-items: center; }
+.feature-media video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 18px; display: block; background: var(--tan); box-shadow: 0 20px 40px rgba(74, 32, 20, .22); }
+.feature .lead { margin-block: 6px 24px; }
+.g-grid { columns: 3 280px; column-gap: 18px; }
+.g-item { break-inside: avoid; margin: 0 0 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.g-item img { width: 100%; }
+.g-item figcaption { padding: 10px 14px; font-weight: 700; font-size: .95rem; }
+@media (max-width: 760px) {
+  .feature { grid-template-columns: 1fr; gap: 28px; }
+  .feature-media { max-width: 320px; justify-self: center; width: 100%; }
+}
+
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .contact-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; gap: 10px; align-content: start; }
