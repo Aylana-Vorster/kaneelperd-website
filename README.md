@@ -38,3 +38,16 @@ Upload the new photo to the `images` folder with the same name as the one it rep
 | Giraffe tan | `#D9A066` |
 
 Fonts: Shrikhand (headlines), Figtree (text), Yellowtail (script accents), all from Google Fonts.
+
+## Logo files
+
+The `brand` folder has the logo ready to download and use anywhere (Canva, printing, stickers, WhatsApp):
+
+| File | Use it for |
+| --- | --- |
+| `brand/kaneelperd-logo.svg` | Light backgrounds. Sharp at any size; best for printing and Canva. |
+| `brand/kaneelperd-logo-on-dark.svg` | Dark backgrounds (cream burst marks). |
+| `brand/kaneelperd-logo.png` | Light backgrounds, for apps that don't accept SVG. Transparent, 1928×606. |
+| `brand/kaneelperd-logo-on-dark.png` | Dark backgrounds, for apps that don't accept SVG. |
+
+Fonts in the logo: Barriecito (KANEELPERD) and Poppins (outer lines).
