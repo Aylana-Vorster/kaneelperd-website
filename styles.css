@@ -137,6 +137,15 @@ p { margin: 0; }
 .flavours span { background: var(--chocolate); color: var(--glaze); border-radius: 999px; padding: 5px 14px; font-weight: 700; font-size: .92rem; }
 .menu-cat .ask { margin-top: 16px; color: var(--muted); }
 
+/* "Don't see what you want?" band */
+.special { display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: center; }
+.special img { width: 100%; }
+.special .lead { margin-block: 4px 22px; }
+@media (max-width: 760px) {
+  .special { grid-template-columns: 1fr; gap: 16px; }
+  .special img { width: 110px; }
+}
+
 /* Options (functions) */
 .options { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .option { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 6px; align-content: start; }
