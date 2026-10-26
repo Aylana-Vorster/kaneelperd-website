@@ -12,7 +12,6 @@
   --display: "Shrikhand", "Cooper Black", Georgia, serif;
   --body: "Figtree", "Segoe UI", system-ui, sans-serif;
   --script: "Yellowtail", "Brush Script MT", cursive;
-  --logo: "Barriecito", "Comic Sans MS", cursive;
 
   --wrap: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -43,24 +42,10 @@ p { margin: 0; }
   background: conic-gradient(var(--chocolate) 25%, var(--glaze) 0 50%, var(--chocolate) 0 75%, var(--glaze) 0) 0 0 / 36px 36px;
 }
 
-/* Logo badge */
-.logo {
-  display: inline-block;
-  background: var(--marigold);
-  color: var(--chocolate);
-  border-radius: 50%;
-  padding: 7px 26px 6px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.05;
-  font-family: var(--logo);
-  font-weight: 400;
-  font-size: .72rem;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.logo b { display: block; font-weight: 400; color: #fff; font-size: 1.6rem; letter-spacing: .05em; text-shadow: 0 1px 0 rgba(74, 32, 20, .45); }
+/* Logo (images/logo.svg) */
+.logo { display: block; flex: none; }
+.logo img { width: 190px; height: auto; }
+.site-footer .logo img { width: 170px; }
 
 /* Header + nav */
 .site-header { background: var(--glaze); position: sticky; top: 0; z-index: 10; }
