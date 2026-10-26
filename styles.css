@@ -167,6 +167,8 @@ p { margin: 0; }
 @media (max-width: 760px) {
   .soon { grid-template-columns: 1fr; justify-items: start; }
 }
+.plan-note { margin-top: 20px; border: 2px dashed var(--tan); border-radius: 12px; padding: 14px 18px; color: var(--glaze); max-width: none; }
+.plan-note strong { color: var(--marigold); }
 .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .plan { background: var(--glaze); color: var(--chocolate); border-radius: 14px; padding: 26px; display: grid; gap: 8px; }
 .plan h3 { font-size: 1.6rem; color: var(--cinnamon); }
