@@ -12,6 +12,7 @@
   --display: "Shrikhand", "Cooper Black", Georgia, serif;
   --body: "Figtree", "Segoe UI", system-ui, sans-serif;
   --script: "Yellowtail", "Brush Script MT", cursive;
+  --logo: "Barriecito", "Comic Sans MS", cursive;
 
   --wrap: 1120px;
   --gutter: clamp(16px, 4vw, 40px);
@@ -25,7 +26,7 @@ body {
   color: var(--chocolate);
   font: 17px/1.6 var(--body);
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--cinnamon); font-weight: 600; text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; }
 h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; margin: 0; text-wrap: balance; }
@@ -52,13 +53,14 @@ p { margin: 0; }
   text-align: center;
   text-decoration: none;
   line-height: 1.05;
-  font-weight: 800;
-  font-size: .62rem;
+  font-family: var(--logo);
+  font-weight: 400;
+  font-size: .72rem;
   letter-spacing: .16em;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.logo b { display: block; color: #fff; font-size: 1.35rem; letter-spacing: .06em; text-shadow: 0 1px 0 rgba(74, 32, 20, .45); }
+.logo b { display: block; font-weight: 400; color: #fff; font-size: 1.6rem; letter-spacing: .05em; text-shadow: 0 1px 0 rgba(74, 32, 20, .45); }
 
 /* Header + nav */
 .site-header { background: var(--glaze); position: sticky; top: 0; z-index: 10; }
@@ -94,13 +96,15 @@ p { margin: 0; }
 .section-head { display: grid; gap: 10px; margin-bottom: 32px; }
 
 /* Home hero */
-.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-block: clamp(40px, 7vw, 80px); }
-.hero h1 { font-size: clamp(2.8rem, 7vw, 5rem); margin: 10px 0 8px; }
+.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; padding-block: clamp(40px, 7vw, 80px); }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.3rem); margin: 10px 0 8px; }
 .hero h1 em { font-style: normal; color: var(--cinnamon); }
 .hero .lead { margin-block: 18px 26px; }
-.hero-art { position: relative; }
-.hero-art .bun { width: 100%; filter: drop-shadow(0 24px 30px rgba(74, 32, 20, .25)); }
-.hero-art .giraffe { position: absolute; left: -8%; bottom: -4%; width: 30%; }
+/* Giraffe stands beside the bun, taller than it */
+.hero-art { position: relative; display: grid; grid-template-columns: 30% 1fr; align-items: end; padding-top: 20px; }
+.hero-art .giraffe { width: 100%; transform: translateX(18%) scale(1.15); transform-origin: bottom center; position: relative; z-index: 1; }
+.hero-art .bun { width: 100%; position: relative; z-index: 2; margin-bottom: 4%; filter: drop-shadow(0 24px 30px rgba(74, 32, 20, .25)); }
+.hero-art .sticker { z-index: 3; }
 .sticker {
   position: absolute; right: 0; top: 0;
   width: 108px; height: 108px; border-radius: 50%;
@@ -148,6 +152,22 @@ p { margin: 0; }
 .option { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 6px; align-content: start; }
 .option h3 { font-size: 1.35rem; color: var(--cinnamon); }
 .option p { color: var(--muted); font-size: .95rem; }
+.soon {
+  margin-top: 24px;
+  display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center;
+  border: 2.5px dashed var(--cinnamon); border-radius: 14px; padding: 22px 24px;
+  background: repeating-linear-gradient(-45deg, transparent 0 14px, rgba(217, 160, 102, .14) 14px 28px);
+}
+.soon h3 { font-size: 1.6rem; color: var(--chocolate); margin-bottom: 4px; }
+.soon p { color: var(--muted); max-width: 46em; }
+.soon-badge {
+  background: var(--marigold); color: var(--chocolate);
+  font-weight: 800; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase;
+  border-radius: 999px; padding: 8px 14px; transform: rotate(-4deg); white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .soon { grid-template-columns: 1fr; justify-items: start; }
+}
 .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .plan { background: var(--glaze); color: var(--chocolate); border-radius: 14px; padding: 26px; display: grid; gap: 8px; }
 .plan h3 { font-size: 1.6rem; color: var(--cinnamon); }
