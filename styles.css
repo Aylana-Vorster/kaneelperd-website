@@ -194,6 +194,15 @@ p { margin: 0; }
   .chef-photo { max-width: 360px; justify-self: center; }
 }
 
+/* Reviews */
+.reviews { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.review { margin: 0; background: var(--glaze); color: var(--chocolate); border-radius: 14px; padding: 24px 26px; display: grid; gap: 16px; align-content: space-between; position: relative; }
+.review::before { content: "“"; position: absolute; top: -6px; right: 18px; font-family: var(--display); font-size: 5rem; line-height: 1; color: var(--tan); opacity: .5; }
+.review blockquote { margin: 0; font-size: 1.08rem; line-height: 1.55; }
+.review figcaption { display: flex; align-items: center; gap: 12px; font-size: .9rem; color: var(--muted); font-weight: 600; }
+.review .initial { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--cinnamon); color: #fff; display: grid; place-items: center; font-family: var(--display); font-size: 1.2rem; }
+@media (max-width: 760px) { .reviews { grid-template-columns: 1fr; } }
+
 /* Gallery */
 .feature { display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 56px; align-items: center; }
 .feature-media video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 18px; display: block; background: var(--tan); box-shadow: 0 20px 40px rgba(74, 32, 20, .22); }
