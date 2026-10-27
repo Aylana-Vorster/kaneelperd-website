@@ -176,6 +176,16 @@ p { margin: 0; }
 .plan { background: var(--glaze); color: var(--chocolate); border-radius: 14px; padding: 26px; display: grid; gap: 8px; }
 .plan h3 { font-size: 1.6rem; color: var(--cinnamon); }
 
+/* Function quote request */
+.quote-ask { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.quote-card { background: #fff; border: 2px dashed var(--tan); border-radius: 16px; padding: 22px 24px; }
+.quote-card-head { font-family: var(--display); font-size: 1.4rem; color: var(--cinnamon); margin-bottom: 10px; }
+.quote-card ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.quote-card li { padding-bottom: 6px; border-bottom: 1px dotted var(--line); }
+.quote-card li:last-child { border-bottom: 0; color: var(--muted); }
+.quote-email { margin-top: 14px; color: var(--muted); font-size: .95rem; }
+@media (max-width: 900px) { .quote-ask { grid-template-columns: 1fr; gap: 28px; } }
+
 /* Story */
 .story { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
 .story .prose { display: grid; gap: 16px; font-size: 1.08rem; max-width: 36em; }
