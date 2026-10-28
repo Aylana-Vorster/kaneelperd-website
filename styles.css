@@ -240,6 +240,7 @@ p { margin: 0; }
 .friend.logo img { object-fit: contain; padding: 28px; background: #fff; border-bottom: 2px solid var(--line); }
 .friend-body { padding: 18px 20px 22px; display: grid; gap: 6px; align-content: start; }
 .friend h3 { font-size: 1.5rem; }
+.friend-by .nowrap { white-space: nowrap; }
 .friend-by { font-weight: 700; color: var(--cinnamon); font-size: .95rem; }
 .friend p { color: var(--muted); font-size: .95rem; }
 .friend-link { margin-top: 6px; font-weight: 800; color: var(--cinnamon); }
