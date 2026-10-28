@@ -241,8 +241,6 @@ p { margin: 0; }
 .friend-by { font-weight: 700; color: var(--cinnamon); font-size: .95rem; }
 .friend p { color: var(--muted); font-size: .95rem; }
 .friend-link { margin-top: 6px; font-weight: 800; color: var(--cinnamon); }
-.friend.join { background: transparent; box-shadow: none; border: 2.5px dashed var(--tan); justify-content: center; text-align: center; }
-.friend.join:hover { border-color: var(--cinnamon); box-shadow: none; }
 
 /* Gallery */
 .feature { display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 56px; align-items: center; }
