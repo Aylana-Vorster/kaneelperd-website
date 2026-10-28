@@ -51,3 +51,14 @@ The `brand` folder has the logo ready to download and use anywhere (Canva, print
 | `brand/kaneelperd-logo-on-dark.png` | Dark backgrounds, for apps that don't accept SVG. |
 
 Fonts in the logo: Barriecito (KANEELPERD) and Poppins (outer lines).
+
+### Round sticker
+
+| File | Use it for |
+| --- | --- |
+| `brand/kaneelperd-sticker-50mm-PRINT.pdf` | Send to the sticker printer: 50 mm round with 2 mm bleed. |
+| `brand/kaneelperd-sticker-with-bleed.svg` | Same as a vector, if the printer asks for SVG. |
+| `brand/kaneelperd-sticker.svg` | The round sticker as a vector, any size. |
+| `brand/kaneelperd-sticker-HD.png` | 3000 × 3000 px, transparent outside the circle. |
+
+Colours: orange `#F78E02`, brown `#561E18`.
