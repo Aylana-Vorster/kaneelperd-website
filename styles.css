@@ -239,6 +239,10 @@ p { margin: 0; }
 .friend:hover { transform: translateY(-3px); box-shadow: 0 0 0 2px var(--tan), 0 14px 28px rgba(74, 32, 20, .12); }
 .friend img { aspect-ratio: 1; object-fit: cover; width: 100%; }
 .friend.logo img { object-fit: contain; padding: 28px; background: #fff; border-bottom: 2px solid var(--line); }
+div.friend:hover { transform: none; box-shadow: 0 0 0 2px var(--line); }
+.friend.logo-sq img { border-bottom: 2px solid var(--line); }
+.friend-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.friend-links .friend-link { text-decoration: none; }
 .friend-body { padding: 18px 20px 22px; display: grid; gap: 6px; align-content: start; }
 .friend h3 { font-size: 1.5rem; }
 .friend-by .nowrap { white-space: nowrap; }
