@@ -9,10 +9,13 @@ Website for Kaneelperd, tall on taste. Live at https://kaneelperd.co.za
 | `index.html` | Home |
 | `menu.html` | Menu and prices |
 | `functions.html` | Function hire and catering |
+| `year-end-functions.html` | Year-end functions (for Google searches) |
+| `ice-cream-truck.html` | Ice cream truck hire, coming soon |
 | `story.html` | Our Story |
 | `contact.html` | Contact |
 | `styles.css` | Colours, fonts and layout for every page. After changing it, update the date in `styles.css?v=...` at the top of every page, so visitors get the new version straight away instead of an old saved copy. |
 | `images/` | Photos and the giraffe drawing |
+| `sitemap.xml`, `robots.txt` | Tell Google which pages exist. Add new pages to `sitemap.xml`. |
 | `CNAME` | Tells GitHub Pages to use kaneelperd.co.za. Don't delete it. |
 
 ## Changing a price
@@ -39,26 +42,8 @@ Upload the new photo to the `images` folder with the same name as the one it rep
 
 Fonts: Shrikhand (headlines), Figtree (text), Yellowtail (script accents), all from Google Fonts.
 
-## Logo files
+## Logo and brand files
 
-The `brand` folder has the logo ready to download and use anywhere (Canva, printing, stickers, WhatsApp):
+Logo, sticker and other brand files are **not** kept here, because everything in this repo is public. They live in the private Kaneelperd folder (`Documents\Kaneelperd\Brand`). Only files the pages actually use belong in this repo.
 
-| File | Use it for |
-| --- | --- |
-| `brand/kaneelperd-logo.svg` | Light backgrounds. Sharp at any size; best for printing and Canva. |
-| `brand/kaneelperd-logo-on-dark.svg` | Dark backgrounds (cream burst marks). |
-| `brand/kaneelperd-logo.png` | Light backgrounds, for apps that don't accept SVG. Transparent, 1928×606. |
-| `brand/kaneelperd-logo-on-dark.png` | Dark backgrounds, for apps that don't accept SVG. |
-
-Fonts in the logo: Barriecito (KANEELPERD) and Poppins (outer lines).
-
-### Round sticker
-
-| File | Use it for |
-| --- | --- |
-| `brand/kaneelperd-sticker-50mm-PRINT.pdf` | Send to the sticker printer: 50 mm round with 2 mm bleed. |
-| `brand/kaneelperd-sticker-with-bleed.svg` | Same as a vector, if the printer asks for SVG. |
-| `brand/kaneelperd-sticker.svg` | The round sticker as a vector, any size. |
-| `brand/kaneelperd-sticker-HD.png` | 3000 × 3000 px, transparent outside the circle. |
-
-Colours: orange `#F78E02`, brown `#561E18`.
+Fonts in the logo: Barriecito (KANEELPERD) and Poppins (outer lines). Logo colours: orange `#F78E02`, brown `#561E18`.
