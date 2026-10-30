@@ -11,7 +11,7 @@ Website for Kaneelperd, tall on taste. Live at https://kaneelperd.co.za
 | `functions.html` | Function hire and catering |
 | `story.html` | Our Story |
 | `contact.html` | Contact |
-| `styles.css` | Colours, fonts and layout for every page |
+| `styles.css` | Colours, fonts and layout for every page. After changing it, update the date in `styles.css?v=...` at the top of every page, so visitors get the new version straight away instead of an old saved copy. |
 | `images/` | Photos and the giraffe drawing |
 | `CNAME` | Tells GitHub Pages to use kaneelperd.co.za. Don't delete it. |
 
