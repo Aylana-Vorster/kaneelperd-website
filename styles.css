@@ -241,6 +241,8 @@ p { margin: 0; }
 .friend.logo img { object-fit: contain; padding: 28px; background: #fff; border-bottom: 2px solid var(--line); }
 div.friend:hover { transform: none; box-shadow: 0 0 0 2px var(--line); }
 .friend.logo-sq img { border-bottom: 2px solid var(--line); }
+.friend-where { display: flex; gap: 6px; align-items: flex-start; margin-top: 2px; font-size: .9rem; font-weight: 600; color: var(--chocolate); line-height: 1.4; }
+.friend-where svg { width: 16px; height: 16px; flex: none; margin-top: 2px; fill: var(--cinnamon); }
 .friend-links { display: flex; gap: 18px; flex-wrap: wrap; }
 .friend-links .friend-link { text-decoration: none; }
 .friend-body { padding: 18px 20px 22px; display: grid; gap: 6px; align-content: start; }
